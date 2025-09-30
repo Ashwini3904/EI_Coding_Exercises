@@ -1,5 +1,6 @@
 # Exercise 1
 
+
 ## Creational Patterns
 
 ### 1. Factory Pattern – *E-Commerce Payment System*
@@ -15,6 +16,7 @@
 * The **Builder Pattern** allows step-by-step construction of customizable portfolios without telescoping constructors.
 
 
+
 ## Structural Patterns
 
 ### 1. Adapter Pattern – *Restaurant Menu System*
@@ -28,6 +30,7 @@
 **Use Case**:
 * An online learning platform shows student progress reports.
 * The **Decorator Pattern** allows dynamically adding features such as **badges, teacher feedback, graphs, or gamification elements** to the base report.
+
 
 
 ## Behavioral Patterns
@@ -49,4 +52,100 @@
    3. Grant role-based access (User/Admin)
 
 * The **Chain of Responsibility Pattern** ensures modular, reusable checks in sequence.
+
+
+
+# Exercise 2
+
+
+## Virtual Classroom Manager
+
+
+## Overview
+
+A **terminal-based Virtual Classroom Manager** built in Java for managing classrooms, students, and assignments.
+Implements **OOP principles, SOLID design, and design patterns** to ensure clean and extensible code.
+
+
+## Features
+
+* Add, remove, and list classrooms
+* Enroll and list students
+* Schedule assignments with deadlines
+* Submit assignments (with late check)
+* View submissions → who submitted & who didn’t
+* Students notified when assignments are scheduled or if they join late
+
+
+## Design Patterns in Virtual Classroom Manager
+
+### 1. **Factory Pattern**
+
+**Purpose:**
+
+* Encapsulates object creation logic.
+* Makes the system more flexible if creation rules change later.
+
+**Relation to Use Case:**
+
+* In a virtual classroom, new **students** and **assignments** are frequently created.
+* Instead of directly instantiating (`new Student()` or `new Assignment()`), factories handle creation.
+* This ensures consistency and makes adding extra logic (e.g., logging, default values) easier in the future.
+
+**Classes Involved:**
+
+* `StudentFactory` → creates `Student` objects.
+* `AssignmentFactory` → creates `Assignment` objects.
+* `VirtualClassroomManager` → uses these factories when adding students or scheduling assignments.
+
+### 2. **Observer Pattern**
+
+**Purpose:**
+
+* Defines a one-to-many relationship where **observers are automatically notified** when the subject’s state changes.
+
+**Relation to Use Case:**
+
+* A **classroom (subject)** notifies all **students (observers)** whenever:
+
+  * A new assignment is scheduled.
+  * A student joins late (they are notified about existing assignments).
+* Mimics real-life “class announcements” where all students must be updated at once.
+
+**Classes Involved:**
+
+* `Observer` → interface (`update(String message)`).
+* `Student` → implements `Observer` and receives notifications.
+* `Classroom` → subject/publisher, maintains student list and triggers notifications.
+* `VirtualClassroomManager` → coordinates the flow (when assignment scheduled, calls notify).
+  
+### 3. **Command Pattern**
+
+**Purpose:**
+
+* Centralizes how commands are **parsed and executed**, making it easier to extend new operations.
+
+**Relation to Use Case:**
+
+* The entire system is CLI-driven (console input).
+* Each user command (`add_classroom`, `add_student`, etc.) needs to be validated and executed consistently.
+* Having a single `VirtualClassroomManager` method (`run()` with switch-case) makes the CLI easy to extend.
+
+**Classes Involved:**
+
+* `VirtualClassroomManager` → command processor, interprets input and dispatches actions.
+* `Main` → client entry point, loops over user input and passes to manager.
+
+
+## Commands
+
+add_classroom <ClassName>  
+remove_classroom <ClassName>  
+add_student <StudentId> <ClassName>  
+schedule_assignment <ClassName> <AssignmentName> <DueDate:yyyy-MM-dd>  
+submit_assignment <StudentId> <ClassName> <AssignmentName>  
+list_classrooms  
+list_students <ClassName>  
+list_submissions <ClassName> <AssignmentName>  
+exit  
 
