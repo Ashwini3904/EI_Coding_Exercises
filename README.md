@@ -16,29 +16,29 @@
 
 ## Creational Patterns
 
-### 1. Factory Pattern 
-E-Commerce Payment System - Payment system for e-commerce checkout (Credit Card, PayPal, UPI).
+### 1. Factory Pattern - *E-Commerce Payment System*
+Payment system for e-commerce checkout (Credit Card, PayPal, UPI).
 
-### 2. Builder Pattern 
-Student Portfolio Builder - Student portfolio generator with optional details.
+### 2. Builder Pattern - *Student Portfolio Builder*
+Student portfolio generator with optional details.
 
 
 ## Structural Patterns
 
-### 1. Adapter Pattern 
-Restaurant Menu System - Converts XML restaurant menu to JSON for Fancy UI.
+### 1. Adapter Pattern - *Restaurant Menu System*
+Converts XML restaurant menu to JSON for Fancy UI.
 
-### 2. Decorator Pattern 
-Online Learning Progress Report - Progress report enhanced with badges and teacher feedback.
+### 2. Decorator Pattern - *Online Learning Progress Report*
+Progress report enhanced with badges and teacher feedback.
 
 
 ## Behavioral Patterns
 
-### 1. Observer Pattern 
-Channel Update Notifications - YouTube channel notifying subscribers of new video uploads.
+### 1. Observer Pattern - *Channel Update Notifications* 
+YouTube channel notifying subscribers of new video uploads.
 
-### 2. Chain of Responsibility Pattern 
-Authentication Workflow - check user → validate password → role access
+### 2. Chain of Responsibility Pattern - *Authentication Workflow*  
+check user → validate password → role access
 
 
 
@@ -51,8 +51,7 @@ A **terminal-based Virtual Classroom Manager** built in Java for managing classr
 Implements **OOP principles, SOLID design, and design patterns** to ensure clean and extensible code.
 
 
-
-## Features
+### Features
 
 * Add, remove, and list classrooms
 * Enroll and list students
@@ -62,50 +61,14 @@ Implements **OOP principles, SOLID design, and design patterns** to ensure clean
 * Students notified when assignments are scheduled or if they join late
 
 
+### Design Patterns used in Virtual Classroom Manager
 
-## Design Patterns used in Virtual Classroom Manager
-
-### 1. **Factory Pattern**
-
-**Purpose:**
-
-* Encapsulates object creation logic.
-* Makes the system more flexible if creation rules change later.
-
-**Relation to Use Case:**
-
-* In a virtual classroom, new **students** and **assignments** are frequently created.
-* Instead of directly instantiating (new Student() or new Assignment()), factories handle creation.
-* This ensures consistency and makes adding extra logic (e.g., logging, default values) easier in the future.
-
-### 2. **Observer Pattern**
-
-**Purpose:**
-
-* Defines a one-to-many relationship where **observers are automatically notified** when the subject’s state changes.
-
-**Relation to Use Case:**
-
-A **classroom (subject)** notifies all **students (observers)** whenever:
-
-  * A new assignment is scheduled.
-  * A student joins late (they are notified about existing assignments).
-  
-### 3. **Command Pattern**
-
-**Purpose:**
-
-* Centralizes how commands are **parsed and executed**, making it easier to extend new operations.
-
-**Relation to Use Case:**
-
-* The entire system is CLI-driven (console input).
-* Each user command (add_classroom, add_student, etc.) needs to be validated and executed consistently.
-* Having a single VirtualClassroomManager method (run() with switch-case) makes the CLI easy to extend.
+* Factory Pattern
+* Observer Pattern
+* Command Pattern
 
 
-
-## Commands
+### Commands
 
 add_classroom <ClassName>  
 remove_classroom <ClassName>  
@@ -116,4 +79,10 @@ list_classrooms
 list_students <ClassName>  
 list_submissions <ClassName> <AssignmentName>  
 exit  
+
+
+## Key Learnings  
+* Applied **SOLID principles** and **OOPS concepts** in practical scenarios.  
+* Implemented **Creational, Structural, and Behavioral design patterns** with real-world use cases.  
+* Built a console-based mini project (Virtual Classroom Manager) showcasing clean and extensible design. 
 
