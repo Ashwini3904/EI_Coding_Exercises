@@ -28,33 +28,6 @@ With the **Decorator Pattern**, these enhancements can be applied **dynamically*
 * Keeps the **base component (ProgressReport)** simple and focused.
 
 
-## File Explanations
+## Output Screenshot
 
-**1. client/ReportDemo.java**
-
-* Demonstrates different versions of the report.
-* Shows a basic report, report with badges, and report with badges + feedback.
-
-**2. component/ProgressReport.java**
-
-* Defines the component interface with the display() method.
-* All reports and decorators implement this interface.
-
-**3. component/BaseProgressReport.java**
-
-* Concrete implementation of the base report.
-* Displays only grades.
-
-**4. decorator/ProgressReportDecorator.java**
-
-* Abstract decorator class.
-* Wraps a ProgressReport and delegates the display() method to it.
-
-**5. decorator/BadgeDecorator.java**
-
-* Concrete decorator that adds badges to the report.
-
-**6. decorator/FeedbackDecorator.java**
-
-* Concrete decorator that adds teacher’s feedback.
-
+<img width="406" height="182" alt="output_ss_decorator" src="https://github.com/user-attachments/assets/540c4efa-a29d-4217-8086-fd1d6a7b9eb7" />
