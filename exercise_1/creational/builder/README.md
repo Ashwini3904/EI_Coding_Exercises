@@ -33,29 +33,6 @@ Instead of having multiple constructors with complex parameter combinations, we 
 * Ensures **clean separation of construction and representation**.
 
 
-## File Responsibilities
+## Output Screenshot
 
-**1. PortfolioApp.java**
-
-* Acts as the client.
-* Demonstrates creating different types of portfolios (experienced student and fresher).
-* Uses the builder step by step to add details, then calls build().
-
-**2. PortfolioBuilder.java**
-
-* Defines the builder interface with methods to set name, email, skills, achievements, and experience.
-* Declares build() method to construct the final StudentPortfolio.
-
-**3. StudentPortfolio.java (Product Class)**
-
-* Represents the final complex object built by the builder.
-* Contains portfolio fields (name, email, skills, achievements, experience).
-* Provides a custom toString() for display.
-
-**4. StudentPortfolioBuilder.java (Concrete Builder)**
-
-* Implements the PortfolioBuilder interface.
-* Collects input values step by step.
-* Validates required fields (e.g name must not be empty).
-* Builds and returns a StudentPortfolio object.
-
+<img width="230" height="251" alt="output_ss_builder" src="https://github.com/user-attachments/assets/53ddd4e5-a5b6-49f7-bf57-72a35985ab65" />
