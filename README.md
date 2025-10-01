@@ -20,7 +20,7 @@
 
 **1. Factory Pattern** - *E-Commerce Payment System*
 
-    Payment system for e-commerce checkout (Credit Card, PayPal, UPI).
+      Payment system for e-commerce checkout (Credit Card, PayPal, UPI).
 
 
 **2. Builder Pattern** - *Student Portfolio Builder*
