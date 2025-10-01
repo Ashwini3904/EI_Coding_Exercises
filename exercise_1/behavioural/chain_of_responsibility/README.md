@@ -31,6 +31,6 @@ The **Chain of Responsibility Pattern** allows these checks to be modular, reusa
 * Order of checks can be easily changed by reordering the chain.
 * New checks (e.g account lock, 2FA, captcha verification) can be added without modifying existing code.
 
-## Console Output
+## Output Screenshot
 
 <img width="238" height="156" alt="output_ss_cor" src="https://github.com/user-attachments/assets/387b4ad0-15f9-4abe-a155-b6934df57c7a" />
