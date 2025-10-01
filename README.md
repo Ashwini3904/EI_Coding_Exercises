@@ -73,9 +73,6 @@
 
 ## Virtual Classroom Manager
 
-
-## Overview
-
 A **terminal-based Virtual Classroom Manager** built in Java for managing classrooms, students, and assignments.
 Implements **OOP principles, SOLID design, and design patterns** to ensure clean and extensible code.
 
