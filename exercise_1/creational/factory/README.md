@@ -32,41 +32,7 @@ This ensures the system is **flexible, extensible, and loosely coupled**.
 * New payment types can be added by extending Payment and updating the PaymentFactory, without touching the client.
 
 
-## File Explanations
+## Output Screenshot
 
-**1. client/ECommerceApp.java**
+<img width="302" height="117" alt="output_ss_factory" src="https://github.com/user-attachments/assets/c03de354-adc9-419b-bdd7-c292bfb9eec8" />
 
-* Acts as the main entry point of the application.
-* Handles user input for amount, payment method, and details.
-* Uses PaymentFactory to create the appropriate payment object.
-* Executes the payment process.
-
-**2. factory/PaymentFactory.java**
-
-* Implements the **Factory Method**.
-* Responsible for creating and returning the correct Payment subclass.
-* Ensures centralized object creation and reduces coupling in the client.
-
-**3. product/Payment.java (Abstract Class)**
-
-* Defines the common contract for all payment types.
-* Holds the transaction amount as a base property.
-* Declares the pay() method to be implemented by subclasses.
-
-**4. product/CreditCardPayment.java**
-
-* Concrete implementation of Payment for credit card transactions.
-* Masks and displays only the last digits of the card number.
-* Simulates processing of credit card payments.
-
-**5. product/PayPalPayment.java**
-
-* Concrete implementation of Payment for PayPal transactions.
-* Uses the customer’s email ID as the PayPal identifier.
-* Simulates processing of PayPal payments.
-
-**6. product/UpiPayment.java**
-
-* Concrete implementation of Payment for UPI transactions.
-* Uses the customer’s UPI ID for processing.
-* Simulates processing of UPI payments.
