@@ -5,11 +5,11 @@
 
 **This repository contains two exercises:**
 
-* **Exercise 1** - Demonstrates various design patterns in Java with suitable use cases, covering Creational, Structural, and Behavioral patterns.
+* **Exercise 1** - Demonstrates various design patterns in Java with suitable real-world use cases, covering Creational, Structural, and Behavioral patterns.
 
 * **Exercise 2** - A **console-based Virtual Classroom Manager** that allows efficient management of classrooms, students, and assignments in a simulated online learning environment.
 
----
+
 
 ## Exercise 1
 
@@ -66,15 +66,16 @@
 
 * The **Chain of Responsibility Pattern** ensures modular, reusable checks in sequence.
 
----
 
-## Exercise 2
+
+## Exercise 2 (Mini-project)
 
 
 ## Virtual Classroom Manager
 
 A **terminal-based Virtual Classroom Manager** built in Java for managing classrooms, students, and assignments.
 Implements **OOP principles, SOLID design, and design patterns** to ensure clean and extensible code.
+
 
 
 ## Features
@@ -85,6 +86,7 @@ Implements **OOP principles, SOLID design, and design patterns** to ensure clean
 * Submit assignments (with late check)
 * View submissions → who submitted & who didn’t
 * Students notified when assignments are scheduled or if they join late
+
 
 
 ## Design Patterns used in Virtual Classroom Manager
@@ -126,6 +128,7 @@ A **classroom (subject)** notifies all **students (observers)** whenever:
 * The entire system is CLI-driven (console input).
 * Each user command (add_classroom, add_student, etc.) needs to be validated and executed consistently.
 * Having a single VirtualClassroomManager method (run() with switch-case) makes the CLI easy to extend.
+
 
 
 ## Commands
