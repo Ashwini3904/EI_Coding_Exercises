@@ -32,36 +32,7 @@ The Adapter bridges the gap, allowing the client to use FancyUI seamlessly with 
 * This allows both systems to work seamlessly without modifying existing code.
 
 
-## File Explanations
+## Output Screenshot
 
-**1. adaptee/FancyUI.java**
-
-* Represents the new system that only works with JSON.
-* Provides methods to display menu and recommendations in JSON format.
-
-**2. adapter/FancyUIAdapter.java**
-
-* Implements the RestaurantApp interface.
-* Converts XML data into JSON before passing it to FancyUI.
-* Bridges the gap between the existing XML-based app and the JSON-based UI.
-
-**3. client/Client.java**
-
-* Acts as the main program.
-* Reads menu data from menu.xml.
-* Demonstrates both the **BasicRestaurantApp (XML)** and the **FancyUIAdapter (JSON)** in action.
-
-**4. target/RestaurantApp.java**
-
-* Defines the **common interface** (showMenu, showRecommendations) expected by the client.
-* Ensures both Basic and Fancy apps can be used interchangeably.
-
-**5. target/BasicRestaurantApp.java**
-
-* An existing implementation that consumes XML directly.
-* Displays menu and recommendations in a simple format.
-
-**6. menu.xml**
-
-* Sample XML menu data used by the client and adapter.
+<img width="310" height="194" alt="output_ss_adapter" src="https://github.com/user-attachments/assets/96aeadb5-ed51-4818-ae50-5548ffd85fb6" />
 
