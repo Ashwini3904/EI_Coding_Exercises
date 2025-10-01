@@ -44,7 +44,7 @@
 
    YouTube channel notifying subscribers of new video uploads.  
 
-2. **Chain of Responsibility Pattern** - *Authentication Workflow*  
+2. **Chain of Responsibility Pattern** - *Authentication System*  
 
    Check user → validate password → role access.  
 
