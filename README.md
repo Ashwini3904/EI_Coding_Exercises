@@ -1,4 +1,4 @@
-# Educational Initiatives Coding Exercises 
+# Educational Initiatives Coding Exercises 2025-26
 
 
 ## Overview
@@ -9,9 +9,9 @@
 
 * **Exercise 2** - A **console-based Virtual Classroom Manager** that allows efficient management of classrooms, students, and assignments in a simulated online learning environment.
 
+---
 
-
-# Exercise 1
+## Exercise 1
 
 
 ## Creational Patterns
@@ -66,9 +66,9 @@
 
 * The **Chain of Responsibility Pattern** ensures modular, reusable checks in sequence.
 
+---
 
-
-# Exercise 2
+## Exercise 2
 
 
 ## Virtual Classroom Manager
