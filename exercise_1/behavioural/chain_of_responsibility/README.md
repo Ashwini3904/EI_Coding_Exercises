@@ -31,43 +31,6 @@ The **Chain of Responsibility Pattern** allows these checks to be modular, reusa
 * Order of checks can be easily changed by reordering the chain.
 * New checks (e.g account lock, 2FA, captcha verification) can be added without modifying existing code.
 
+## Console Output
 
-## File Explanations
-
-**1. client/AuthApp.java**
-
-* Entry point of the program.
-* Builds the chain: UserExistsHandler -> ValidPasswordHandler -> RoleCheckHandler.
-* Tests different login scenarios (unknown user, wrong password, normal user, admin).
-
-**2. client/AuthService.java**
-
-* Wraps the authentication process.
-* Passes login requests into the handler chain.
-
-**3. data/Database.java**
-
-* A mock in-memory database storing usernames and passwords.
-* Provides methods to check user existence and validate passwords.
-
-**4. handler/Handler.java**
-
-* Abstract base class for all handlers.
-* Stores the reference to the next handler in the chain.
-* Provides the handleNext() method to delegate responsibility.
-
-**5. handler/UserExistsHandler.java**
-
-* First handler in the chain.
-* Verifies whether the username exists in the database.
-
-**6. handler/ValidPasswordHandler.java**
-
-* Second handler in the chain.
-* Validates the entered password for the given username.
-
-**7. handler/RoleCheckHandler.java**
-
-* Final handler in the chain.
-* Grants role-based access → Admin Dashboard or User Dashboard.
-
+<img width="238" height="156" alt="output_ss_cor" src="https://github.com/user-attachments/assets/387b4ad0-15f9-4abe-a155-b6934df57c7a" />
