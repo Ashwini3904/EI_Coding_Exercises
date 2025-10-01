@@ -14,37 +14,39 @@
 ## Exercise 1 (Design patterns)
 
 
-## Creational Patterns
+### Creational Patterns
 
-* **Factory Pattern** - *E-Commerce Payment System*
+1. **Factory Pattern** - *E-Commerce Payment System*
 
-  Payment system for e-commerce checkout (Credit Card, PayPal, UPI).
+   Payment system for e-commerce checkout (Credit Card, PayPal, UPI).
 
-* **Builder Pattern** - *Student Portfolio Builder*
 
-  Student portfolio generator with optional details.
+2. **Builder Pattern** - *Student Portfolio Builder*
+
+   Student portfolio generator with optional details.
+
 
 
 ## Structural Patterns
 
-* **Adapter Pattern** - *Restaurant Menu System*
+1. **Adapter Pattern** - *Restaurant Menu System*
 
-  Converts XML restaurant menu to JSON for Fancy UI.
+   Converts XML restaurant menu to JSON for Fancy UI.
 
-* **Decorator Pattern** - *Online Learning Progress Report*
+2. **Decorator Pattern** - *Online Learning Progress Report*
 
-  Progress report enhanced with badges and teacher feedback.
+   Progress report enhanced with badges and teacher feedback.
 
 
 ## Behavioral Patterns
 
-* **Observer Pattern** - *Channel Update Notifications* 
+1. **Observer Pattern** - *Channel Update Notifications* 
 
-  YouTube channel notifying subscribers of new video uploads.
+   YouTube channel notifying subscribers of new video uploads.
 
-* **Chain of Responsibility Pattern** - *Authentication Workflow*  
+2. **Chain of Responsibility Pattern** - *Authentication Workflow*  
 
-  check user → validate password → role access
+   check user → validate password → role access
 
 
 
