@@ -11,60 +11,34 @@
 
 
 
-## Exercise 1
+## Exercise 1 (Design patterns)
 
 
 ## Creational Patterns
 
-### 1. Factory Pattern – *E-Commerce Payment System*
+### 1. Factory Pattern 
+**E-Commerce Payment System** - Payment system for e-commerce checkout (Credit Card, PayPal, UPI).
 
-**Use Case**:
-* An e-commerce application supports multiple payment methods (CreditCard, PayPal, UPI).
-* The **Factory Method** dynamically creates the right payment processor based on user input, ensuring flexibility and scalability.
-
-### 2. Builder Pattern – *Student Portfolio Builder*
-
-**Use Case**:
-* A university placement system generates student portfolios with optional details like email, skills, achievements, and experience.
-* The **Builder Pattern** allows step-by-step construction of customizable portfolios without telescoping constructors.
-
+### 2. Builder Pattern 
+**Student Portfolio Builder** - Student portfolio generator with optional details.
 
 
 ## Structural Patterns
 
-### 1. Adapter Pattern – *Restaurant Menu System*
+### 1. Adapter Pattern 
+**Restaurant Menu System** - Converts XML restaurant menu to JSON for Fancy UI.
 
-**Use Case**:
-* A restaurant system maintains its menu in **XML format**, but a new **Fancy UI library** expects **JSON format**.
-* The **Adapter Pattern** converts XML into JSON so the Fancy UI can seamlessly display the menu without changing existing systems.
-
-### 2. Decorator Pattern – *Online Learning Progress Report*
-
-**Use Case**:
-* An online learning platform shows student progress reports.
-* The **Decorator Pattern** allows dynamically adding features such as **badges, teacher feedback, graphs, or gamification elements** to the base report.
-
+### 2. Decorator Pattern 
+**Online Learning Progress Report** - Progress report enhanced with badges and teacher feedback.
 
 
 ## Behavioral Patterns
 
-### 1. Observer Pattern – *Youtube Channel Subscription Notifications*
+### 1. Observer Pattern 
+**Youtube Channel Subscription Notifications** - YouTube channel notifying subscribers of new video uploads.
 
-**Use Case**:
-* A **YouTube-like channel system** allows users to subscribe to channels.
-* When the channel uploads a new video, all subscribers are automatically notified with the video details.
-* Subscribers can also unsubscribe anytime and stop receiving further notifications.
-
-### 2. Chain of Responsibility Pattern – *Authentication Workflow*
-
-**Use Case**:
-* An authentication system verifies user login step by step:
-
-   1. Check if user exists
-   2. Validate password
-   3. Grant role-based access (User/Admin)
-
-* The **Chain of Responsibility Pattern** ensures modular, reusable checks in sequence.
+### 2. Chain of Responsibility Pattern 
+**Authentication Workflow** - Authentication workflow (check user → validate password → role access).
 
 
 
