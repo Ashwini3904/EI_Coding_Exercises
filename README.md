@@ -110,11 +110,10 @@ Implements **OOP principles, SOLID design, and design patterns** to ensure clean
 
 **Relation to Use Case:**
 
-* A **classroom (subject)** notifies all **students (observers)** whenever:
+A **classroom (subject)** notifies all **students (observers)** whenever:
 
   * A new assignment is scheduled.
   * A student joins late (they are notified about existing assignments).
-* Mimics real-life “class announcements” where all students must be updated at once.
   
 ### 3. **Command Pattern**
 
