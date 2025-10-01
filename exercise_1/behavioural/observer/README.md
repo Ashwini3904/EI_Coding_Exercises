@@ -25,32 +25,6 @@ A **YouTube channel system** where:
 * Supports **loose coupling** between the publisher (channel) and consumers (subscribers).
 
 
-## File Explanations
+## Output Screenshot
 
-**1. client/YouTubeApp.java**
-
-* Demonstrates the system.
-* Creates a channel and subscribers.
-* Shows subscription, unsubscription, and video upload notifications.
-
-**2. observer/Observer.java**
-
-* Defines the Observer interface.
-* Declares update() method for receiving notifications.
-
-**3. observer/Subscriber.java**
-
-* Concrete implementation of Observer.
-* Each subscriber has a username and receives video upload notifications.
-
-**4. subject/Subject.java**
-
-* Defines the Subject interface.
-* Declares methods to add, remove, and notify observers.
-
-**5. subject/Channel.java**
-
-* Concrete implementation of Subject.
-* Stores channel name and list of subscribers.
-* When a new video is uploaded, notifies all subscribed users.
-
+<img width="353" height="194" alt="output_ss_observer" src="https://github.com/user-attachments/assets/e62b7710-757d-40d7-9457-3fca75f8e50f" />
