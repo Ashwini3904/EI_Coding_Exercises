@@ -1,3 +1,16 @@
+# Educational Initiatives Coding Exercises 
+
+
+## Overview
+
+**This repository contains two exercises:**
+
+* **Exercise 1** - Demonstrates various design patterns in Java with suitable use cases, covering Creational, Structural, and Behavioral patterns.
+
+* **Exercise 2** - A **console-based Virtual Classroom Manager** that allows efficient management of classrooms, students, and assignments in a simulated online learning environment.
+
+
+
 # Exercise 1
 
 
@@ -77,7 +90,7 @@ Implements **OOP principles, SOLID design, and design patterns** to ensure clean
 * Students notified when assignments are scheduled or if they join late
 
 
-## Design Patterns in Virtual Classroom Manager
+## Design Patterns used in Virtual Classroom Manager
 
 ### 1. **Factory Pattern**
 
