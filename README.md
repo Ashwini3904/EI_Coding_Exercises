@@ -20,12 +20,12 @@
 
 **1. Factory Pattern** - *E-Commerce Payment System*
 
-     Payment system for e-commerce checkout (Credit Card, PayPal, UPI).
+    Payment system for e-commerce checkout (Credit Card, PayPal, UPI).
 
 
 **2. Builder Pattern** - *Student Portfolio Builder*
 
-     Student portfolio generator with optional details.
+    Student portfolio generator with optional details.
 
 
 
@@ -33,22 +33,22 @@
 
 **1. Adapter Pattern** - *Restaurant Menu System*
 
-     Converts XML restaurant menu to JSON for Fancy UI.
+    Converts XML restaurant menu to JSON for Fancy UI.
 
 **2. Decorator Pattern** - *Online Learning Progress Report*
 
-     Progress report enhanced with badges and teacher feedback.
+    Progress report enhanced with badges and teacher feedback.
 
 
 ## Behavioral Patterns
 
 **1. Observer Pattern** - *Channel Update Notifications* 
 
-     YouTube channel notifying subscribers of new video uploads.
+    YouTube channel notifying subscribers of new video uploads.
 
 **2. Chain of Responsibility Pattern** - *Authentication Workflow*  
 
-     check user → validate password → role access
+    check user → validate password → role access
 
 
 
