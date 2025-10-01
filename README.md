@@ -102,12 +102,6 @@ Implements **OOP principles, SOLID design, and design patterns** to ensure clean
 * Instead of directly instantiating (new Student() or new Assignment()), factories handle creation.
 * This ensures consistency and makes adding extra logic (e.g., logging, default values) easier in the future.
 
-**Classes Involved:**
-
-* StudentFactory → creates Student objects.
-* AssignmentFactory → creates Assignment objects.
-* VirtualClassroomManager → uses these factories when adding students or scheduling assignments.
-
 ### 2. **Observer Pattern**
 
 **Purpose:**
@@ -121,13 +115,6 @@ Implements **OOP principles, SOLID design, and design patterns** to ensure clean
   * A new assignment is scheduled.
   * A student joins late (they are notified about existing assignments).
 * Mimics real-life “class announcements” where all students must be updated at once.
-
-**Classes Involved:**
-
-* Observer → interface (update(String message)).
-* Student → implements Observer and receives notifications.
-* Classroom → subject/publisher, maintains student list and triggers notifications.
-* VirtualClassroomManager → coordinates the flow (when assignment scheduled, calls notify).
   
 ### 3. **Command Pattern**
 
@@ -140,11 +127,6 @@ Implements **OOP principles, SOLID design, and design patterns** to ensure clean
 * The entire system is CLI-driven (console input).
 * Each user command (add_classroom, add_student, etc.) needs to be validated and executed consistently.
 * Having a single VirtualClassroomManager method (run() with switch-case) makes the CLI easy to extend.
-
-**Classes Involved:**
-
-* VirtualClassroomManager → command processor, interprets input and dispatches actions.
-* Main → client entry point, loops over user input and passes to manager.
 
 
 ## Commands
