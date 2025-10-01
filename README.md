@@ -11,6 +11,8 @@
 
 
 
+
+
 ## Exercise 1 (Design patterns)
 
 
@@ -47,6 +49,8 @@
 2. **Chain of Responsibility Pattern** - *Authentication Workflow*  
 
    check user → validate password → role access
+
+
 
 
 
@@ -87,6 +91,9 @@ list_classrooms
 list_students <ClassName>  
 list_submissions <ClassName> <AssignmentName>  
 exit  
+
+
+
 
 
 ## Key Learnings  
